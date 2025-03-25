@@ -1,0 +1,27 @@
+a{
+  border: 3px solid yellow;
+  margin: 4px 4px;
+  display: inline-block;
+  width: fit-content;
+  font-size: 18px;
+  padding: 6px 6px;
+  
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* box-sizing: border-box; */
+
+
+}
+.links{
+  margin-right: 0;
+  margin-left: auto;
+  border: 1px solid rgb(15, 1, 1);
+  width: fit-content;
+  border-radius: 5px;
+}
+a:hover{
+  background-color: blue;
+}
+.links:hover{
+  background-color: chartreuse;
+}
