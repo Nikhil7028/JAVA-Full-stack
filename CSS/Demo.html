@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="position.css">
-  <style>
-    body{
-      background-color: burlywood;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Drum</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .drum {
+            width: 120px;
+            height: 200px;
+            background: radial-gradient(circle at center, #2b7ce2 40%, #1c5db0 80%);
+            border-radius: 50% / 20%;
+            position: relative;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .drum::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 10%;
+            width: 80%;
+            height: 20px;
+            background: rgb(14, 13, 13);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .drum::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 10%;
+            width: 80%;
+            height: 20px;
+            background: #1c5db0;
+            border-radius: 10px;
+        }
+
+        .handles {
+            position: absolute;
+            top: 40px;
+            left: -20px;
+            width: 160px;
+            height: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .handle {
+            width: 30px;
+            height: 10px;
+            background: #1c5db0;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-
- <!-- <div class="child child1"> Child 1</div> 
- <div class="child child2"> Child 2</div>
- <div class="child child3"> Child 3</div>
- <div class="child child4"> Child 4</div>
- <div class="child child5">Child 5</div> -->
-<div>
-
-  <div class="child child1">Child 1</div>
-  <div class="child child2">Child 2</div>
-  <div class="child child3">Child 3</div>
-  <div class="child child4">Child 4</div>
-  <div class="child child5">Child 5</div>
-</div>
-
-
-
-
-
-
-
-
-
+    <div class="drum">
+        <div class="handles">
+            <div class="handle"></div>
+            <div class="handle"></div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,26 @@
+
+.para1{
+  columns: 3;
+  text-align: justify;
+  column-rule: 1px solid rgb(7, 7, 7);
+  column-gap: 45px;
+
+}
+.para1::first-letter{
+  color: rgb(238, 10, 10);
+  font-size: 30px;
+  font-weight: bold;
+}
+.message{
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 50px;
+  word-spacing: 19px;
+}
+.paperName{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.title{
+  font-size: 35px
+}

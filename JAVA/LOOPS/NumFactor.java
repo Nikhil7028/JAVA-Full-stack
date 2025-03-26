@@ -1,4 +1,4 @@
-package CODING.LOOPS;
+package JAVA.LOOPS;
 // number of factor
 public class NumFactor {
   public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class NumFactor {
       }
     }
     System.out.println(count);
+    // prime number
   }
   
 }

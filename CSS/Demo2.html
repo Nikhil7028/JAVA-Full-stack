@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cement Bag</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .cement-bag {
+            width: 200px;
+            height: 300px;
+            background: linear-gradient(to bottom, #f4c000, #d39b00);
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cement-bag::before {
+            content: "UltraTech CEMENT";
+            font-size: 18px;
+            position: absolute;
+            top: 20px;
+        }
+
+        .cement-bag::after {
+            content: "The Engineer's Choice \A PPC";
+            font-size: 14px;
+            white-space: pre-line;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+        }
+
+        .details {
+            font-size: 12px;
+            position: absolute;
+            bottom: 60px;
+            width: 80%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cement-bag">
+        <div class="logo"></div>
+        <div class="details">High Strength | Long Life | Quality Assured</div>
+    </div>
+</body>
+</html>

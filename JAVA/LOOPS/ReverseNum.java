@@ -1,4 +1,4 @@
-package CODING.LOOPS;
+package JAVA.LOOPS;
 // Reverse the given number 142
 public class ReverseNum {
   public static void main(String[] args) {
